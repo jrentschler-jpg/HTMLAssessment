@@ -3,6 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Assessment</title>
+    <style>
+      table{
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td{
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+    </style>
   </head>
   <h1>TEXT</h1>
   <body>
@@ -21,6 +31,8 @@
       Scores by quarter
       <table>
         <tr>
+          <th colspan=""> Table Header</th>
+
           <th>First Half</th>
           <th>Second Half</th>
 
@@ -30,11 +42,16 @@
           <th>Table Header</th>
           <th>Final</th>
         </tr>
+
         <tr>
+          <th rowspan="4"></th>
+          </tr>
+          <tr>
           <th>Q1</th>
           <th>Q2</th>
           <th>Q3</th>
           <th>Q4</th>
+
         </tr>
         <tr>
           <td>Philadelphia Eagles</td>
@@ -131,12 +148,18 @@
           Last:<input type="text"/>
           <br>
           Favorite Sport:
+          <select>
+            <option value="Football">Football</option>
+            <option value="Cheerleading">Cheerleading</option>
+            <option value="Baseball">Baseball</option>
+
+          </select>
           <br>
           I have:
-          <input type="radio" name="list" value="Attended">Attended
-          <input type="radio" name="list" value="Played">Played
-          <input type="radio" name="list" value="Coached">Coached
-          <input type="radio" name="list" value="Bet on">Bet on
+          <input type="checkbox" name="list" value="Attended">Attended
+          <input type="checkbox" name="list" value="Played">Played
+          <input type="checkbox" name="list" value="Coached">Coached
+          <input type="checkbox" name="list" value="Bet on">Bet on
           <br>
           this sport.
           <br>
