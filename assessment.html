@@ -4,22 +4,28 @@
     <meta charset="utf-8">
     <title>HTML Assessment</title>
     <style>
-      table{
+      table {
         style = "border:1px dashed black;"
         border-collapse: collapse;
         width: 100%;
       }
-      th, td{
+      th, td {
         border: 1px solid #ccc;
         padding: 10px;
       }
-
       .sansserif{
         font-family: Arial, Helvetica, sans-serif;
       }
       .monospace{
         font-family: "Lucida Console", monospace;
-
+      }
+      .imagePositionBox {
+        height: 100px;
+        padding: 30px;
+        background-size: 300px;
+        background-image: url("SuperBowlLIISBPreview.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 30%;
       }
     </style>
   </head>
@@ -58,15 +64,14 @@
       <hr>
       <p class = "monospace">SCORES BY QUARTER</p>
       <br>
+
       <table style = "border-width: 10px; border-style: solid; border-color: black;">
 
         <tr>
-
           <td style = "color: black; background-color: LightGray;"rowspan="2">Team Name</td>
           <td style = "color: white; background-color:black;"colspan="2">First Half</td>
           <td style = "color: white; background-color: black;"colspan="2">Second Half</td>
           <td style = "color: black; background-color: LightGray;"rowspan="2">Final</td>
-
         </tr>
 
 
@@ -86,6 +91,7 @@
           <td style = "background-color: green;">12</td>
           <td style = "background-color: green;">41</td>
         </tr>
+
         <tr>
           <td style = "color: blue; background-color: #FF0000;" class = "monospace">New England Patriots</td>
           <td style = "color: blue;">3</td>
@@ -94,6 +100,7 @@
           <td style = "color: blue;">7</td>
           <td style = "color: blue;">33</td>
         </tr>
+
         <tr>
           <td style = "background-color: LightGray;">Total</td>
            <td style = "background-color: yellow;">12</td>
@@ -130,8 +137,9 @@
 </ul>
 
 
-
-      <img width="200" src="SuperBowlLIISBPreview.jpg" alt = "SuperBowl Picture">
+  <br>
+    <div class="imagePositionBox">
+    </div>
         <ul>
           <li>
         <img width= "100" src="new-england-patriots-logo-1989-1992.png" alt="new england patriots logo">
