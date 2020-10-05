@@ -12,7 +12,6 @@
 table, tr, th, td {
   color: black;
   text-align:center;
-  font-weight:bold;
   border: 1px solid #ccc;
   padding: 10px;
 }
@@ -21,6 +20,7 @@ caption {
 }
 th{
   color: blue;
+  font-weight:bold;
 }
 ul{
   list-style-type: square;
