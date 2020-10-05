@@ -10,7 +10,14 @@ table {
   font-weight:bold;
   text-align: center;
 }
-
+/* Start Stretch Goal: alternating row colors. */
+tr:nth-child(even) {
+  background-color: #eee;
+}
+tr:nth-child(odd) {
+  background-color: #fff;
+}
+/* End Stretch Goal. */
 tr, th, td {
   border: 1px solid #ccc;
   padding: 10px;
